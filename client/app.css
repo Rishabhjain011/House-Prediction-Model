@@ -1,0 +1,163 @@
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* Switch field to make the radio buttons inline */
+.switch-field {
+    display: flex;
+    margin-bottom: 36px;
+    overflow: hidden;
+}
+
+.switch-field input {
+    position: absolute !important;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    width: 1px;
+    border: 0;
+    overflow: hidden;
+}
+
+.switch-field label {
+    background-color: #e4e4e4;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+    line-height: 1;
+    text-align: center;
+    padding: 8px 16px;
+    margin-right: -1px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+    transition: all 0.1s ease-in-out;
+}
+
+.switch-field label:hover {
+    cursor: pointer;
+}
+
+.switch-field input:checked + label {
+    background-color: #a5dc86;
+    box-shadow: none;
+}
+
+.switch-field label:first-of-type {
+    border-radius: 4px 0 0 4px;
+}
+
+.switch-field label:last-of-type {
+    border-radius: 0 4px 4px 0;
+}
+
+/* Form container styling */
+.form {
+    max-width: 320px; /* Increased max width for better appearance */
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    line-height: 1.625;
+    margin: 8px auto;
+    padding-left: 16px;
+    z-index: 2;
+    padding-right: 16px; /* Added padding on the right */
+}
+
+/* Header styling */
+h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #333; /* Slightly darker color for better contrast */
+}
+
+/* Input field styling */
+.area, .location {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%; /* Ensure inputs are full width */
+    border: 1px solid #ccc; /* Added a border for better contrast */
+    margin: 0 0 15px; /* Increased bottom margin for spacing */
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+/* Submit button styling */
+.submit {
+    background: #a5dc86;
+    width: 100%; /* Ensure button is full width */
+    border: 0;
+    margin: 25px 0 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 15px;
+    height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Added transition effect */
+}
+
+.submit:hover {
+    background-color: #8bc34a; /* Darker shade on hover for feedback */
+}
+
+/* Result box styling */
+.result {
+    background: #dcd686;
+    width: 100%; /* Ensure result box is full width */
+    border: 0;
+    margin: 25px 0 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+    height: 35px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Background image styling */
+.img {
+    background: url('https://images.livemint.com/img/2020/04/23/600x338/PTI22-04-2020_000146A_1587626568563_1587626584785.jpg') no-repeat center center;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: blur(5px); /* Remove this for testing */
+}
+
+/* Container for the form */
+.container {
+    background-color: #fff;
+    width: 450px;
+    height: auto; /* Change height to auto to accommodate varying content sizes */
+    margin: auto;
+    padding: 20px; /* Uniform padding */
+    align-items: center;
+    border-radius: 9px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Added subtle shadow for depth */
+}
+
+/* Body styling */
+body, html {
+    height: 100%;
+    margin: 0; /* Remove margin from body */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .area, .location, .submit {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 16px; /* Slightly smaller font size for smaller screens */
+    }
+}
