@@ -1,4 +1,4 @@
-# House-Prediction-Model
+# House-Price-Prediction-Model
 House Prediction Model
 
 This is a data science project in which I have built a model for real estate price prediction. I have used bangalore home prices dataset from kaggle.com and used linear regression model for prediction. I have made a flask server that uses this saved model to serve http requests. Finally for the front end, HTML, CSS and JavaScript is used to allow the user to enter the attributes like square ft area, bedrooms etc and the model will call python flask server to retrieve the predicted price. Technology and tools used:
